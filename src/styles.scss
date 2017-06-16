@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i|Raleway:700,800');
+
+//mixins de fonts
+@mixin raleway($size, $weight, $color){
+  font-family: 'Raleway', sans-serif;
+  font-size:$size;
+  font-weight:$weight;
+  color:$color;
+
+}
+@mixin ptsans($size, $weight, $color){
+  font-family: 'PT Sans', sans-serif;
+  font-size:$size;
+  font-weight:$weight;
+  color:$color;
+}
+@import "assets/bootstrap-scss/variables";
+
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+
+body{
+  background: url("assets/images/shattered-island.gif") fixed;
+}
+.container{
+  background: white;
+}
